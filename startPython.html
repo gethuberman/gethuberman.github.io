@@ -1,0 +1,203 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сайт-Шаблон</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="css/button.css" rel="stylesheet" type="text/css">
+    <script src="js/button.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/include-html.min.js"></script>
+
+  </head>
+  <body>
+    <div include-html="header.html" id="header_file"></div>
+    
+    <div class="container-fluid" style="margin-top: 10px;">
+
+      <div id="center" class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="background-color: white !important; border: 4px double black;">
+          <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic" align="center" style="color: black;">Основы Python</h1>
+            <p class="lead my-3" align="center" style="color: black;">На данном пробном сайте вы можете ознакомится с основами Python</p>
+            <p class="lead mb-0" align="center" style="color: black;"><a href="https://www.python.org" class="text-black font-weight-bold">Ссылка на Python</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="margin-top: 10px; margin-bottom: 10px;">
+          <p align="center">
+              
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_1" aria-expanded="false" aria-controls="collapseExample_1">
+                Нажмите чтобы посмотреть разбор основ Python
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample_1" style="width: 100%;">
+              <div class="card card-body" style="width: 100%;">
+                  <div class="card">
+                      <div class="card-header" align="center" style="font-size: 24px;">
+                        <b>Основы Python</b>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title" align="center" style="margin-bottom: 10px;">Основы Python</h5>
+                          <pre style="margin-bottom: 0; width: auto;">
+print() # команда для вывода информации на экран
+
+#возможные варианты использования команды print()
+
+print(5) # вывод числа (целочисленный тип данных ->
+         # обыкновенные числа используемые при счёте)
+         # Пример (-10, -9, ... 0, ... 9, 10)
+
+print(5.5) # вывод дробного числа (вещественный тип данных ->
+           # числа с остатком)
+           # Пример (-10.1, -9.2, ... 0, ... 9.5, 10.8)
+           # Примечание: В качестве разделителя ставится
+           # " . ", а не " , ".
+
+print("Привет") # вывод строчного типа данных
+                # выводить можно в таком типе данных
+                # что угодно как слова так и символы так
+                # и цифры
+                # Варианты записи print("  "), print('  ')
+
+#                   Переменные
+# Переменная это хранилище для какого либо типа данных
+# Варианты типа данных: int - целочисленный тип
+#                       float - вещественный тип
+#                       str - строковый тип данных
+#
+# Из чего состоит переменная:
+# Имя переменной, данные которые хранит переменная.
+#
+# Правила при создании имени переменной:
+# Имена переменных могут быть любой длины,
+# могут иметь заглавные и
+# строчные буквы(от A до Z, от a до z),
+# цифру(0-9) и символ подчеркивания(_).
+#
+# Переменные предназначены для хранения данных.
+# Название переменной в Python должно начинаться с
+# алфавитного символа или со знака подчеркивания
+# и может содержать алфавитно-цифровые символы
+# и знак подчеркивания.
+# И кроме того, название переменной не должно совпадать
+# с названием ключевых слов языка Python.
+#
+# Ключевых слов не так много, их легко запомнить:
+# False      await      else       import     pass
+# None       break      except     in         raise
+# True       class      finally    is         return
+# and        continue   for        lambda     try
+# as         def        from       nonlocal   while
+# assert     del        global     not        with
+# async      elif       if         or         yield
+#
+a = 5        # переменная имеет целочисленный тип данных
+b = 5.5      # переменная имеет вещественный тип данных
+c = "Привет" # переменная имеет строковый тип данных
+
+print(a)     # вывод переменной " a "
+print(b)     # вывод переменной " b "
+print(c)     # вывод переменной " c "
+
+input() #команда для ввода информации с клавиатуры
+
+# команда input() работает вместе с переменной
+# Варианты написания:
+# a = input() -> по умолчанию все что мы введём с клавиатуры
+#                будет иметь строковый тип данных
+
+a = input("Введите данные: ") # -> комментарий при вводе
+a = input('Введите данные: ') # -> комментарий при вводе
+
+# a = int(input()) - > введеные с клавиатуры данные
+#                      примут целочисленное значение
+# Примечание: если ввести символы или текст возникнет ошибка
+#
+# a = float(input()) - > введеные с клавиатуры данные
+#                      примут вещественное значение
+# Примечание: если ввести символы или текст возникнет ошибка
+#
+# a = str(input()) - > введеные с клавиатуры данные
+#                      примут строковое значение значение
+# Примечание: можно вводить что угодно
+#
+# Элементарные операции над переменными
+# 1) Операция сложения. Знак операции " + "
+# 2) Операция вычитание. Знак операции " - "
+# 3) Операция умножения. Знак операции " * "
+# 4) Операция деления. Знак операции " / "
+#   Примечание: в Python существует 3 типа деления
+#               более подробно в уроке " Типы деления "
+# 5) Операция возведение в степень. Знак операции " ** "
+
+# Примечание: Элементарные математические операции можно
+#             проводить только над типами данных int и float
+
+# Примеры элементарных операций
+a = 7
+b = 17
+print(a + b)   # умножение
+print(a - b)   # вычитание
+print(a * b)   # умножение
+print(a / b)   # деление
+print(a ** b)  # возведение в степень</pre>
+                      </div>
+                    </div>
+              </div>
+            </div>
+      
+      </div>
+
+
+
+
+
+      <div class="container-fluid" style="margin-top: 10px; margin-bottom: 10px;">
+          <p align="center">
+              
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_2" aria-expanded="false" aria-controls="collapseExample_2">
+                Нажмите чтобы посмотреть разбор задания 7.118
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample_2" style="width: 100%;">
+              <div class="card card-body" style="width: 100%;">
+                  <div class="card">
+                      <div class="card-header" align="center" style="font-size: 24px;">
+                        <b>Разбор 7.118</b>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title" align="center" style="margin-bottom: 10px;">Задание 7.188 из задачника</h5>
+                          <pre style="margin-bottom: 0; width: auto;">
+"""Даны натуральное число n и целые числа a1, a2, …, an,
+среди которых имеются числа, равные 10. Найти:
+а) номер последнего из них;
+б) номер первого из них."""
+n = int(input('Введите количество элементов a для ввода: '))
+for i in range(1,n+1):
+  print("Введите элемент A",i,": ")
+  a = int(input())
+  if a == 10:
+    countA = i
+    break #break для буквы б)
+print(countA)</pre>
+                      </div>
+                    </div>
+              </div>
+            </div>
+      
+      </div>
+ 
+    
+
+<div include-html="footer.html" id="footer_file"></div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">В начало</button>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
