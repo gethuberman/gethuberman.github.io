@@ -2,13 +2,13 @@ const start = () => {
 
 
 	gapi.client.init({
-		'apiKey': 'AIzaSyBqFPF5b7k6B0ys9v_SJ0TGm4tDbUYdvjw',
+		'apiKey': 'AIzaSyDNy4dlPtoBqdqQdKlWEPeIFZLHuO9Y3l8',
 		'discoveryDocs': ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
 	  })
 	  .then(() => {
 		return gapi.client.sheets.spreadsheets.values.get({
-		  spreadsheetId: '1fbfPhUc3brlOMU_aaVwUsXnRItLlJO4emw6id4olG-Y',
-		  range: 'task!A:H', // for example: List 1!A1:B6
+		  spreadsheetId: '1S7MatGXsAqN38W92Mb6C3GjawGFXXNZZmmhN65wX_iU',
+		  range: 'task!A:C', // for example: List 1!A1:Bc
 		})
 	  })
 	  .then((response) => {
