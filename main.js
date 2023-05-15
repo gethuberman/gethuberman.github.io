@@ -28,7 +28,7 @@ const start = () => {
 		// add table data rows
 		for (let i = 1; i < loadedData.length; i++) {			
 		  const tableRow = document.createElement('tr');
-		  for (let j = 0; j < loadedData[i].length; j++) {
+		  for (let j = 0; j < loadedData[i][j].length; j++) {
 		  	tableRow.innerHTML += `<td>${loadedData[i][j]}</td>`
 			};
 		  table.appendChild(tableRow);
