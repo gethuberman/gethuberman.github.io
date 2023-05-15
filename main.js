@@ -21,7 +21,7 @@ const start = () => {
 		
 		// add column headers
 		const columnHeaders = document.createElement('tr');
-		for (let i = 0; i < loadedData.length; i++) {
+		for (let i = 0; i < loadedData[i].length; i++) {
 		columnHeaders.innerHTML += `<th>${loadedData[0][i]}</th>`};
 		table.appendChild(columnHeaders);
 	
