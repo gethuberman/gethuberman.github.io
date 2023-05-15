@@ -9,7 +9,13 @@
     <script src="js/button.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/include-html.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+</script>
+<script src="https://apis.google.com/js/client:platform.js?onload=start" async defer>
+</script>
+<script src="https://apis.google.com/js/api.js"></script>
 </head>
+  
   <body>
     
         <div include-html="header.html" id="header_file"></div>
@@ -133,7 +139,13 @@
         </div>
       </div>
     </div>-->   
-  
+    
+    <div id="tasksTableDiv" class="table-responsive mt-2"></div>
+        <table></table>
+    
+        
+      </div>
+
     <div include-html="footer.html" id="footer_file"></div>
 
       <button onclick="topFunction()" id="myBtn" title="Go to top">В начало</button>
